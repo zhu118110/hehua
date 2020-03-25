@@ -1,0 +1,46 @@
+<!--积分商城页面-->
+<view class="container">
+
+  <block wx:for="{{ shop_type }}">
+    <view class="type_one">
+      <view class="type_one_title">
+        {{item.type}}
+      </view>
+      <!-- 大图 -->
+      <view class="type_one_logo">
+        <image src="{{ item.logo }}"></image>
+      </view>
+      <!-- 详情图 -->
+     
+      <view class="type_one_detail">
+        <block wx:for="{{ item.shop }}" wx:for-item="shopItem">
+          <view class="type_one_detail_img">
+            <view>
+              <image src="{{ shopItem.imgSrc }}"></image>
+            </view>
+            <view class="type_one_name">
+              {{ shopItem.shop_name }}
+            </view>
+            <view class="type_one_dh">
+              <view class="type_one_dh_jfnum">
+                <image src="../../../images/dh.png"></image>
+                <text> {{ shopItem.jf_price }} </text>
+              </view> 
+              <view class="type_one_dh_btn">
+                <button hover-class="none">兑换</button>
+              </view>
+            </view>
+
+
+          </view>
+        </block>
+      </view>
+      
+      
+
+    </view>
+
+  </block>
+  
+
+</view>

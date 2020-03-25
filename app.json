@@ -1,0 +1,52 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/luntan/luntan",
+    "pages/zixun/zixun",
+    "pages/my/my",
+    "pages/my/my_infor/my_infor",
+    "pages/my/my_care/my_care",
+    "pages/my/jf_shop/jf_shop",
+	  "pages/my/orderForm/orderForm"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7fc8aa",
+    "navigationBarTitleText": "荷花博物馆"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#7fc8aa",
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar_index.png",
+        "selectedIconPath": "images/tabbar_selindex.png"
+      },
+      {
+        "pagePath": "pages/zixun/zixun",
+        "text": "资讯",
+        "iconPath": "images/tabbar_zixun.png",
+        "selectedIconPath": "images/tabbar_selzixun.png"
+      },
+      {
+        "pagePath": "pages/luntan/luntan",
+        "text": "论坛",
+        "iconPath": "images/tabbar_luntan.png",
+        "selectedIconPath": "images/tabbar_selluntan.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "selectedIconPath": "images/tabbar_selmy.png",
+        "iconPath": "images/tabbar_my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

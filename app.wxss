@@ -1,0 +1,7 @@
+/**app.wxss**/
+@import "/icon/icon.wxss";
+.container {
+  height: auto;
+  background-color: #fcfcfc;
+  box-sizing: border-box;
+} 

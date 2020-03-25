@@ -1,0 +1,61 @@
+<!--pages/my/my_care/my_care.wxml-->
+<view class="container">
+	<view class="header">
+		<block wx:for="{{careTitle}}"> 
+			<view bindtap="changeTitle" data-index="{{index}}" class="clickCol {{style==index?'active':''}}">
+				{{item}}
+			</view>
+		</block>
+	</view>
+	<view class="main">
+		<block wx:for="{{message}}"  wx:if="{{style==0}}">
+			<view class="message">
+				<view class="message_img">
+					<image src="{{item.src}}">
+						
+					</image>
+				</view>
+				<view class="message_msg">
+					<view class="message_msg_title">{{item.title}}</view>
+					<view class="message_msg_detail">{{item.detail}}</view>
+					<view class="watch">
+						<image src="../../../images/open.png"></image>
+						{{item.watch}}
+					</view>
+				</view>
+			</view>
+		</block>
+		
+		<!-- 帖子 -->
+		<block wx:for="{{post}}"  wx:if="{{style==1}}">
+			<view class="post">
+        <!-- 标题 -->
+				<view class="post_title" >{{item.title}}</view>
+				<view class="post_area">
+					
+					<view class="post_msg">
+          <!-- 头像 -->
+            <view class="post_tx">
+              <view class="post_tx_img">
+                <image src="{{item.txImg}}"></image>
+              </view>
+
+              <view>{{item.name}}</view>
+            </view>
+          <!-- 详情 -->
+						<view class="post_detail">{{item.detail}}</view>
+						<view class="nice">
+							 <text>{{item.nice}}点赞</text>
+               <text style="margin:0 10rpx">·</text>
+               <text>{{item.comment}}评论</text>
+						</view>
+					</view>
+					
+					<view class="post_img">
+						<image src="{{item.src}}">	</image>
+					</view>		
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

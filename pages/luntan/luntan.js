@@ -1,0 +1,27 @@
+// const app = getApp()
+Page({
+  data:{
+		commend:[{
+			title:"国庆门票9折起国庆门票9折起国庆门票9折起国庆门票9折起国庆门票9折起",
+			tx:"../../images/nologin.jpg",
+			name:"小鱼儿",
+			detail:"国庆门票9折起国庆门票9折起国庆门票9折起国庆门票9折起折起国庆门票9折",
+			nice:1234,
+			pl:4321
+		},{
+			title:"国庆门票9折起",
+			tx:"../../images/nologin.jpg",
+			name:"小鱼儿",
+			detail:"国庆门票9折起国庆门票9折起国庆门票9折起国庆门票9折起",
+			nice:1234,
+			pl:4321
+		},{
+			title:"国庆门票9折起",
+			tx:"../../images/nologin.jpg",
+			name:"小鱼儿",
+			detail:"国庆门票9折起国庆门票9折起国庆门票9折起国庆门票9折起",
+			nice:1234,
+			pl:4321
+		}]
+  }
+})

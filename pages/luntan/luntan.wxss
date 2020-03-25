@@ -1,0 +1,125 @@
+.container{
+	/* padding-bottom: 40rpx; */
+	background-color: #fff;
+}
+.main{
+	background-color: #fcfcfc;
+}
+.header{
+	padding:32rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #fff;
+}
+.header .header_left{
+	display: flex;
+	justify-content: flex-start;
+	
+}
+.hd_left_img{
+	width: 120rpx;
+	height: 120rpx;
+}
+.hd_left_img image{
+	width: 100%;
+	height: 100%;
+}
+.hd_left_title{
+	font-size: 30rpx;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.hd_left_title view:nth-child(2){
+	color: #bbb;
+	font-size: 28rpx;
+}
+.header_right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	height: 70rpx;
+	
+	align-self: center;
+	font-size: 30rpx;
+	padding: 0 25rpx;
+	color: #fff;
+	border-radius: 10rpx;
+	background-color: #7fc8aa;
+}
+
+.content{
+	margin-top: 30rpx;
+	
+	background-color: #fff;
+}
+
+.comment{
+	padding:40rpx 32rpx;
+	border-bottom: 1rpx solid #f5f5f5;
+	font-size: 30rpx;
+}
+.comment .comment_detail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 25rpx;
+	
+}
+.cmt_detail_left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	font-size: 28rpx;
+}
+
+.dtl_left_tx{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.dtl_left_tx view:nth-child(1){
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 50%;
+	background-color: #f3f3f3;
+	overflow: hidden;
+	margin-right: 16rpx;
+}
+.dtl_left_tx view:nth-child(1) image{
+	width: 100%;
+	height: 100%;
+}
+.dtl_left_infor view{
+	margin-top: 15rpx;
+	color: #acacac;
+	
+}
+.dtl_left_infor>view:nth-child(1){
+	box-sizing: border-box;
+	white-space: normal;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+
+
+
+
+
+.cmt_detail_right{
+}
+.cmt_detail_right image{
+	width: 250rpx;
+	height: 100%;
+}

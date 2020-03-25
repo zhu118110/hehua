@@ -1,0 +1,129 @@
+/* pages/my/my_care/my_care.wxss */
+.container{
+	font-size: 30rpx;
+}
+
+.header{
+	display: flex;
+	justify-content: space-around;
+	background-color: #f2f9f6;
+}
+.header>view{
+	color: #999999;
+	font-weight: 600;
+	text-align: center;
+	padding: 20rpx;
+}
+.clickCol.active{
+	color: #7fc8aa;
+	border-bottom: 5rpx solid #7fc8aa;
+}
+
+
+
+/* 主要内容 */
+.main{
+	width: 100%;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+  background-color: #fff
+}
+.main .message{
+	width: 100%;
+	padding: 30rpx 0;
+	border-bottom: 1rpx solid #eee;
+	font-size: 30rpx;
+	display: flex;
+	justify-content: space-around;
+}
+.message_img{
+	flex: 1;
+	
+}
+.message_img image,.post_img image{
+	width: 100%;
+	height: 220rpx;
+}
+.message_msg{
+	flex:2;
+	margin-left: 20rpx;
+}
+
+.message_msg_title,.message_msg_detail,.post_title,.post_detail{
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow:ellipsis;
+}
+.message_msg_detail{
+	font-size: 28rpx;
+	color: #9b9b9b;
+	margin-top: 15rpx;
+}
+.watch{
+	margin-top: 15rpx;
+	font-size: 28rpx;
+}
+.watch image{
+	width: 25rpx;
+	height: 20rpx;
+}
+
+
+
+/* 帖子 */
+.post{
+	width: 100%;
+	padding: 40rpx 0 30rpx;
+	border-bottom: 1rpx solid #eee;
+	font-size: 30rpx;
+  
+}
+.post_area{
+	display: flex;
+	justify-content: space-between;
+  margin-top: 15rpx
+	
+}
+.post_area .post_msg{
+	flex:3;
+}
+.post_area .post_detail{
+	font-size: 28rpx;
+	color: #9b9b9b;
+	margin: 10rpx 0;
+}
+.post_img{
+  flex: 2;
+  margin-left: 20rpx
+}
+.post_img image{
+	width: 100%;
+	height: 180rpx;
+}
+.post_tx{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.post_tx view{
+  align-items: center;
+}
+.post_tx_img{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15rpx;
+}
+.post_tx_img image{
+  width: 100%;
+  height: 100%
+}
+
+.nice text{
+  color: #9b9b9b;
+  font-size: 26rpx;
+}

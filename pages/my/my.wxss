@@ -1,0 +1,116 @@
+.container{
+	background-color: #fff;
+	height: 100vh;
+}
+
+.header{
+	background-color: #7fc8aa;
+	padding: 50rpx 38rpx 50rpx 41rpx;
+	
+}
+.header>navigator{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+}
+.hd_tx{
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.hd_tx image{
+	width: 100%;
+	height: 100%;
+}
+.hd_infor{
+	
+	color: #fff;
+	margin-left: 20rpx;
+}
+.hd_name{
+	font-size: 34rpx;
+	font-weight: bold;	
+}
+.hd_qd{
+	font-size: 28rpx;
+	width: 117rpx;
+	border: 4rpx solid #fff;
+	padding: 5rpx 0;
+	border-radius: 10rpx;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 20rpx;
+}
+
+
+.activity{
+	padding: 0 35rpx 0 41rpx;
+	
+}
+.activity_main{
+	padding:30rpx 0;
+	border-radius: 20rpx;
+	width: 100%;
+	background-color: #fff;
+	font-size: 28rpx;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5rpx 5rpx 10rpx #ccc;
+}
+
+.my_jf{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.my_jf_img{
+	width: 75rpx;
+	height: 75rpx;
+	background-color: #7fc8aa;
+	border-radius: 50%;
+	line-height: 75rpx;
+	text-align: center;
+	margin-bottom: 20rpx;
+}
+.my_jf_img text{
+	font-size: 34rpx;
+	color: #fff;
+}
+
+
+
+.about{
+	padding-top:40rpx;
+}
+.about_box{
+	width: 100%;
+	
+}
+.about_gr{
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	/* padding-top: 20rpx; */
+  line-height: 100rpx
+}
+.gr_left{
+	display: flex;
+	flex: 1;
+}
+.gr_left text{
+	font-size: 36rpx;
+	color: #afbeff;
+	
+}
+.gr_right{
+	flex:9;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
+	/* padding-bottom:40rpx; */
+	border-bottom: 1rpx solid #eee;
+}

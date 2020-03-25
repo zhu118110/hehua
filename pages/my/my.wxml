@@ -1,0 +1,142 @@
+<view class="container">
+	<view class="box">
+		<view class="header">
+			<navigator url="my_infor/my_infor" hover-class="none">
+				<view class="hd_tx" >
+					<image src="../../images/nologin.jpg"></image>
+				</view>
+				<view class="hd_infor">
+					<view class="hd_name">荷花博物馆</view>
+					<view class="hd_qd">签到</view>
+				</view>
+			</navigator>
+		</view>
+		
+		<view class="activity">
+			<view class="activity_main">
+      
+				<view class="my_jf">
+					<view class="my_jf_img">
+						<text class="iconfont icon-integral"></text>
+					</view>
+					<view>
+						<text>我的积分</text>
+					</view>
+				</view>
+				
+			<navigator url="jf_shop/jf_shop" hover-class="none">
+			  <view class="my_jf">
+				<view class="my_jf_img">
+				  <text class="iconfont icon-duihuan"></text>
+				</view>
+				<view>
+				  <text>兑换商城</text>
+				</view>
+			  </view>
+			</navigator>
+
+      <navigator url="orderForm/orderForm" hover-class="none">
+        <view class="my_jf">
+          <view class="my_jf_img">
+            <text class="iconfont icon-6"></text>
+          </view>
+          <view>
+            <text>订单管理</text>
+          </view>
+        </view>
+      </navigator>
+
+			</view>
+		</view>
+		
+		<view class="about activity">
+			<view class="about_box">
+
+        <navigator url="my_infor/my_infor" hover-class="none">
+          <view class="about_gr">
+            <view class="gr_left">
+              <text class="iconfont icon-geren1"></text>
+            </view>
+            <view class="gr_right">
+              <view>
+                个人
+              </view>
+              <view>
+                <text class="iconfont icon-you"></text>
+              </view>
+            </view>
+          </view>
+        </navigator>
+
+        <!-- <navigator url="my_infor/my_infor" hover-class="none"> -->
+          <view class="about_gr">
+            <view class="gr_left">
+              <text class="iconfont icon-dizhi" style="color: #92ffcb;"></text>
+            </view>
+            <view class="gr_right">
+              <view>
+                我的地址
+              </view>
+              <view>
+                <text class="iconfont icon-you"></text>
+              </view>
+            </view>
+          </view>
+        <!-- </navigator> -->
+
+
+
+
+
+        <navigator url="my_care/my_care" hover-class="none">
+          <view class="about_gr">
+            <view class="gr_left">
+              <text class="iconfont icon-tianchongxing-" style="color: #92ffcb;"></text>
+            </view>
+            <view class="gr_right">
+              <view>
+                我的关注
+              </view>
+              <view>
+                <text class="iconfont icon-you"></text>
+              </view>
+            </view>
+          </view>
+				</navigator>
+
+				<view class="about_gr">
+					<view class="gr_left">
+						<text class="iconfont icon-guanyu"  style="color: #ffd595;"></text>
+					</view>
+					<view class="gr_right">
+						<view>
+							关于我们
+						</view>
+						<view>
+							<text class="iconfont icon-you"></text>
+						</view>
+					</view>
+				</view>
+				
+				<view class="about_gr">
+					<view class="gr_left">
+						<text class="iconfont icon-lianxi1" style="color: #ffa1a1;"></text>
+					</view>
+					<view class="gr_right">
+						<view>
+							联系客服
+						</view>
+						<view>
+							<text class="iconfont icon-you"></text>
+						</view>
+					</view>
+				</view>
+				
+			</view>
+		</view>
+		
+		
+		
+		
+	</view>
+</view>

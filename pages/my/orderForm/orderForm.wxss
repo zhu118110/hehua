@@ -1,0 +1,88 @@
+/* pages/my/orderForm/orderForm.wxss */
+.container{
+	font-size: 30rpx;
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+	background-color: #f2f9f6;
+	
+}
+.header>view{
+	
+	color: #999999;
+	font-weight: 600;
+	text-align: center;
+	padding: 20rpx;
+}
+.clickCol.active{
+	color: #7fc8aa;
+	border-bottom: 5rpx solid #7fc8aa;
+}
+
+
+
+/* 已发货 */
+.deliver{
+	width: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	margin-bottom: 20rpx;
+}
+.deliver_title{
+	font-size: 30rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 30rpx;
+	border-bottom: 1rpx solid #eee;
+}
+
+.deliver_detail{
+	padding: 20rpx 30rpx;
+	border-bottom: 1rpx solid #eee;
+	display: flex;
+	justify-content: space-around;
+}
+.deliver_detail_img{
+	flex:1;
+	font-size: 0;
+}
+.deliver_detail_img image{
+	width: 100%;
+	height: 220rpx;
+}
+.deliver_detail_js{
+	flex:1;
+	margin-left: 15rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.deliver_detail_infor text{
+	font-size: 30rpx;
+}
+
+.deliver_detail_infor text:first-child{
+	color: #ccc;
+}
+.deliver_detail_infor text:nth-child(2n){
+	font-size: 34rpx;
+	margin-left: 20rpx;
+	font-weight: 600;
+}
+.deliver_detail_infor text:last-child{
+	font-size: 26rpx;
+}
+.deliver_btn{
+	display: flex;
+	justify-content: flex-end;
+	padding: 20rpx 30rpx;
+}
+.deliver_btn button{
+	margin: 0;
+	background-color: #7fc8aa;
+	color: #fff;
+	margin-left:10rpx;
+}

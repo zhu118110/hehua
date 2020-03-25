@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <swiper indicator-dots='true' indicator-color='#bfe3d4' indicator-active-color='#7fc8aa' autoplay='true'>
+      <block wx:for="{{swipers}}" wx:for-item="item" wx:for-index="index">
+        <swiper-item style='text-align:center'>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>   
+    </swiper>
+  </view>
+	
+	<!-- 3D体验馆 -->
+  <view class='threeDty'>
+    <view class='threeDtyBox listBox'>
+			<view class="listTitle">
+				 <text>3D体验馆</text>
+			</view>
+			<view class="threeD_img">
+				  <block wx:for="{{threeD}}">
+				    <view class="threeD_img_item">
+				      <image src="{{item}}"></image>
+				    </view>
+				  </block>
+			</view>
+    </view>
+  </view>
+	
+	<!-- 新闻资讯 -->
+	<view class='news list'>
+		<view class="newsBox listBox">
+			<!-- 新闻标题 -->
+			<view class="newsTitle listTitle">
+				<text>新闻资讯</text>
+				<text>更多></text>
+			</view>
+			<!-- 新闻内容 -->
+			<view class="news_Img">
+				<view wx:for="{{news}}" wx:for-item="item"  wx:for-index="index" wx:key="index" class="news_Img_item">
+					<view style="font-size: 0;">
+						<image src="{{item.src}}"></image>
+					</view>
+					<view class="news_Img_title">
+						<text>{{item.title}}</text>
+					</view>
+					<view class="news_Img_title news_Img_from">
+						<view>
+							<text>来源:  {{item.unknown}}</text>
+						</view>
+						<view>
+							<image src="../../images/open.png" style="width: 28rpx;height: 22rpx;"></image>
+							<text> {{item.watch}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+			
+		</view>	
+	</view><!-- 新闻资讯 -->
+	
+	
+	<!-- 荷花论坛 -->
+	<view class='lt list'>
+		<view class="listBox">
+			<!-- 论坛标题 -->
+			<view class="ltTitle listTitle">
+				<text>荷花论坛</text>
+				<text>更多></text>
+			</view>
+			<!-- 论坛图片 -->
+			<movable-area class="movable">
+				<movable-view direction="horizontal" out-of-bounds='true' inertia='true'>
+					<block wx:for="{{lt}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+						<view>
+							<image src="{{item}}"></image>
+						</view>
+					</block>
+				</movable-view>
+			</movable-area>
+		</view>	
+	</view><!-- 荷花论坛 -->
+	
+	
+	<!-- 在线博物馆 -->
+	<view class='lt list'>
+		<view class="listBox">
+			<!-- 博物馆标题 -->
+			<view class="ltTitle listTitle">
+				<text>在线博物馆</text>
+				<text>更多></text>
+			</view>
+			<!-- 博物馆图片 -->
+			<movable-area class="movable">
+				<movable-view direction="horizontal" out-of-bounds='true' inertia='true'>
+					<block wx:for="{{bwg}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+						<view>
+							<image src="{{item}}"></image>
+						</view>
+					</block>
+				</movable-view>
+			</movable-area>
+		</view>	
+	</view><!-- 在线博物馆 -->
+	
+</view>

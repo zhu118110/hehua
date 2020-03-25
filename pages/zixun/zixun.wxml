@@ -1,0 +1,34 @@
+<view class="container">
+	<view class="main">
+		<view class="header">
+			<swiper indicator-dots='true' indicator-color='#bfe3d4' indicator-active-color='#7fc8aa' autoplay='true'>
+				<block wx:for="{{swipers}}" wx:for-item="item" wx:for-index="index">
+					<swiper-item>
+						<image src="{{item}}"></image>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		
+		<block wx:for="{{menpiao}}" wx:for-index="index" wx:for-item="item">
+			<view class="menpiao" >
+				<view class="menpiao_left">
+					<image src="{{item.src}}" mode="aspectFit"></image>
+				</view>
+				<view class="menpiao_right">
+					<view class="right_title">
+						{{item.title}}
+					</view>
+					<view class="detail">
+						{{item.detail}}
+					</view>
+					<view class="img">
+						<image src="../../images/open.png"></image>
+						{{item.watch}}
+					</view>
+					
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

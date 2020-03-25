@@ -1,0 +1,132 @@
+.container{
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #fcfcfc;
+}
+.header{
+  width: 100%;
+  height: 125rpx;
+  /* background-color:red;  */
+  background-color: white;
+  padding:30rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.head_img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.head_img image{
+  width: 100%;
+  height: 100%
+}
+.head_name{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  font-weight: 600;
+}
+
+/* 个人信息 */
+.infor{
+  margin-top: 30rpx;
+  height: 100%;
+  padding: 0 30rpx;
+  background-color: #fff;
+
+}
+.infor_sex{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  line-height: 120rpx;
+}
+.sex_left{
+  align-items: center;
+}
+.sex_left image{
+	width: 60rpx;
+	height: 60rpx;
+	vertical-align: middle;
+	margin-right: 30rpx;
+}
+.sex_right{
+	color: #666;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start
+}
+.sex_right text{
+	margin-left: 10rpx;
+}
+
+
+
+/* 选择性别 */
+.showSex{
+	
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	padding: 0 30rpx;
+	background-color: rgba(105,108,100,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box
+}
+.chooseSex{
+	width: 100%;
+	background-color: #fff;
+	border: 1rpx solid #eee;
+	border-radius: 20rpx;
+	padding:80rpx 50rpx;
+	font-size: 30rpx;
+}
+.chooseSex_title{
+	text-align: center;
+}
+.chooseSex_img{
+	width: 100%;
+	
+	display: flex;
+	justify-content: space-around;
+	align-self: baseline;
+	text-align: center;
+}
+.chooseSex_img>view{
+	flex: 1;
+	padding: 30rpx 0;
+}
+.chooseSex_img image{
+	width: 150rpx;
+	height: 150rpx;
+}
+
+
+.chooseJob_img{
+	flex-wrap: wrap;
+}
+
+
+
+
+.sure{
+  width: 100%;
+  position: fixed;
+  bottom: 200rpx;
+  background-color: #fff
+}
+.sure button{
+  width: 50%;
+  margin:0 auto;
+  color: #fff;
+  font-size: 30rpx;
+  background-color: #7fc8aa;
+}

@@ -1,0 +1,115 @@
+<!-- 我的关注 -->
+<view class="container">
+	<!-- 头像名字 -->
+    <view class="header">
+      <view class="head_img">
+        <image src="../../../images/nologin.jpg"></image>
+      </view>
+      <view class="head_name">
+        <text>阿狸</text>
+      </view>
+    </view>
+   
+   
+  <!-- 个人信息 -->
+    <view class="infor">
+		
+      <view class="infor_sex" catchtap="showSex">
+        <view class="sex_left">
+          <image src="../../../images/sex.png"></image>
+          性别
+        </view>
+
+        <view class="sex_right">
+            {{sexValue}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </view>
+	  
+	  <picker mode="date" bindchange="birthDayChange" value="{{birthday}}">
+		  <view class="infor_sex">
+			<view class="sex_left">
+			  <image src="../../../images/happyDay.png"></image>
+			  生日
+			</view>
+		  
+			<view class="sex_right">
+				{{birthday}}
+			  <text class="iconfont icon-you"></text>
+			</view>
+		  </view>
+	  </picker>
+	  
+	  <picker mode="region" bindchange="addressChange" value="{{address}}">
+		  <view class="infor_sex">
+			<view class="sex_left">
+			  <image src="../../../images/address.png"></image>
+			  地址
+			</view>
+		  
+			<view class="sex_right">
+				{{address[0]}} {{address[1]}} {{address[2]}}
+			  <text class="iconfont icon-you"></text>
+			</view>
+		  </view>
+	  </picker>
+	  
+	  <view class="infor_sex" catchtap="showJobArea">
+	    <view class="sex_left">
+	      <image src="../../../images/job.png"></image>
+	      职业
+	    </view>
+	    <view class="sex_right">
+	        {{jobValue}}
+	      <text class="iconfont icon-you"></text>
+	    </view>
+	  </view>
+
+
+    </view>
+
+	<!-- 选择性别区域 -->
+	<view class="showSex" wx:if="{{sex}}" bindtap="hideSex">
+		<view class="chooseSex">
+			<view class="chooseSex_title">
+				<text>选择性别</text>
+			</view>
+			
+			<view class="chooseSex_img">
+				<view catchtap="chooseMan">
+					<image src="../../../images/boy.png"></image>
+					<view>男</view>
+				</view>
+				<view catchtap="chooseLady">
+					<image src="../../../images/gril.png"></image>
+					<view>女</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="showSex showJob" wx:if="{{jobShow}}" bindtap="hideSex">
+		<view class="chooseSex chooseJob">
+			<view class="chooseSex_title">
+				<text>选择工作</text>
+			</view>
+			
+			<view class="chooseSex_img chooseJob_img">
+									<!-- data-index  将点击的每一项的下标当做参数 -->
+				<view catchtap="chooseJob" data-index="{{index}}" wx:for="{{jobObj}}">
+					<image src="{{item.imgSrc}}"></image>
+					<view>{{item.type}}</view>
+				</view>
+				
+			</view>
+		</view>
+	</view>
+	
+	<view class="sure" bindtap="sure">
+    <button>
+       确认
+    </button>
+  </view>
+
+	
+</view>

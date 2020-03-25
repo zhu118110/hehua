@@ -1,0 +1,56 @@
+<view class='container'>
+  <view class='main'>
+    <view class="header">
+			<view class="header_left">
+				<view class="hd_left_img">
+					<image src="../../images/luntan_hd.png"></image>
+				</view>
+				<view class="hd_left_title">
+					<view>
+						展览馆之美
+					</view>
+					<view>
+						贴子数:123
+					</view>
+				</view>
+			</view>
+			<view class="header_right">
+					<text>我要发贴</text>
+			</view>
+		</view>
+		
+		<view class="content">
+			<view class="comment" wx:for="{{ commend }}" wx:for-item="item">
+				<view class="comment_title">
+					<text>{{ item.title }}</text>
+				</view>
+				
+				<view class="comment_detail">
+					<view class="cmt_detail_left">
+						
+						<view class="dtl_left_tx">
+							<view><image src="{{item.tx}}"></image></view>
+							<view> {{ item.name }} </view>
+						</view>
+						
+						<view class="dtl_left_infor">
+							<view>
+								<text> {{ item.detail }} </text>
+							</view>
+							<view>
+								<text>点赞:{{ item.nice }} 评论:{{ item.pl }}</text>
+							</view>
+						</view>
+						
+					</view>
+
+					<view class="cmt_detail_right">
+							<image src="../../images/luntan_2.jpg"></image>
+					</view>
+				</view>
+			</view>
+			
+		</view>
+
+  </view>
+</view>
