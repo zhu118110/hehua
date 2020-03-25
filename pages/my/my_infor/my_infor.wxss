@@ -114,9 +114,6 @@
 	flex-wrap: wrap;
 }
 
-
-
-
 .sure{
   width: 100%;
   position: fixed;

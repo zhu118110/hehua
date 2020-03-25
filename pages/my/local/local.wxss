@@ -1,0 +1,48 @@
+/* pages/my/local/local.wxss */
+.container{
+  width: 100%;
+  background-color: #fcfcfc;
+  font-size: 30rpx
+}
+.area{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx
+}
+.area_title{
+  padding: 20rpx 30rpx;
+  border-bottom:1rpx solid #ccc; 
+}
+.area_title_name{
+  display: flex;
+  align-items: baseline;
+}
+
+.area_title_name view:nth-child(2){
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.area_title_area{
+  font-size: 28rpx;
+  margin-top: 15rpx
+}
+.handle{
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.handle .radio{
+  transform:scale(0.9);
+}
+.handle .radio text{
+  font-size: 30rpx
+}
+.handle_delete{
+  font-size: 30rpx;
+  color: rgb(126, 125, 125)
+}
+.handle_delete text{
+  margin-left: 30rpx;
+  font-size: 26rpx
+}

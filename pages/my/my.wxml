@@ -68,7 +68,7 @@
           </view>
         </navigator>
 
-        <!-- <navigator url="my_infor/my_infor" hover-class="none"> -->
+        <navigator url="local/local" hover-class="none">
           <view class="about_gr">
             <view class="gr_left">
               <text class="iconfont icon-dizhi" style="color: #92ffcb;"></text>
@@ -82,7 +82,7 @@
               </view>
             </view>
           </view>
-        <!-- </navigator> -->
+        </navigator>
 
 
 

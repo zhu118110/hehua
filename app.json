@@ -8,8 +8,8 @@
     "pages/my/my_infor/my_infor",
     "pages/my/my_care/my_care",
     "pages/my/jf_shop/jf_shop",
-	  "pages/my/orderForm/orderForm"
-    
+    "pages/my/orderForm/orderForm",
+    "pages/my/local/local"
   ],
   "window": {
     "backgroundTextStyle": "light",
