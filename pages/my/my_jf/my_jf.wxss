@@ -1,0 +1,54 @@
+/* pages/my/my_jf/my_jf.wxss */
+.container{
+  width: 100%;
+  background-color: #fff;
+  font-size: 30rpx;
+}
+.my_jf{
+  width: 100%;
+  padding: 50rpx 30rpx;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+  box-sizing: border-box;
+}
+.my_jf_show{
+  text-align: center
+}
+.my_jf text{
+  position: absolute;
+  top: 30rpx;
+  right: 50rpx;
+  
+}
+.my_jf text::before{
+  background-color: #7fc8aa;
+  border-radius: 50%;
+  color: #fff
+}
+.my_jf_show view:last-child{
+  font-weight: 800;
+  font-size: 60rpx;
+  color: #7fc8aa;
+}
+
+
+
+
+.jf{
+  width: 100%;
+}
+.get_jf{
+  width: 100%;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.get_way{
+  align-self: center;
+}
+.get_time{
+  color: #999;
+}

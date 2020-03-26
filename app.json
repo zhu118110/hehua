@@ -5,11 +5,14 @@
     "pages/luntan/luntan",
     "pages/zixun/zixun",
     "pages/my/my",
+    "pages/local/local",
     "pages/my/my_infor/my_infor",
+    "pages/my/my_jf/my_jf",
     "pages/my/my_care/my_care",
     "pages/my/jf_shop/jf_shop",
     "pages/my/orderForm/orderForm",
-    "pages/my/local/local"
+    "pages/local/edit_local/edit_page"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

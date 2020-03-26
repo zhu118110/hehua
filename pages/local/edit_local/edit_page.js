@@ -1,26 +1,39 @@
-// pages/my/local/local.js
+// pages/local/edit_local/edit_page.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    defaults: true,
-    myLocal:[{
-      name:"张三",
-      phone:15555558888,
-      area:"山西省长治市xx县XX村",
-      
-
-    }, {
-        name: "张三",
-        phone: 15555558888,
-        area: "山西省长治市xx县XX村",
-       
-
-      }]
+    recipients:"",  //收件人
+    phone:"",    //手机号
+    area:[],    //所在地区
+    deatil_address:"",    //详细地址
+    defaults:false    //设为默认
   },
-
+  // 选择地区
+  chooseArea(e){
+      
+      this.setData({
+        ['area']: this.data.area.concat(e.detail.value)
+      })
+   
+  },
+  // 设为默认
+  changeSwitch(e){
+    
+      this.setData({
+        defaults:e.detail.value
+      })
+  },
+  formSubmit(e){
+    // e.detail.value是表单里的数据
+    wx.navigateTo({
+      url: '../local',
+      success() {
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

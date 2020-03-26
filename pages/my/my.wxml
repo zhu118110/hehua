@@ -14,7 +14,7 @@
 		
 		<view class="activity">
 			<view class="activity_main">
-      
+      <navigator url="my_jf/my_jf" hover-class="none">
 				<view class="my_jf">
 					<view class="my_jf_img">
 						<text class="iconfont icon-integral"></text>
@@ -23,7 +23,7 @@
 						<text>我的积分</text>
 					</view>
 				</view>
-				
+			</navigator>	
 			<navigator url="jf_shop/jf_shop" hover-class="none">
 			  <view class="my_jf">
 				<view class="my_jf_img">
@@ -68,7 +68,7 @@
           </view>
         </navigator>
 
-        <navigator url="local/local" hover-class="none">
+        <navigator url="../local/local" hover-class="none">
           <view class="about_gr">
             <view class="gr_left">
               <text class="iconfont icon-dizhi" style="color: #92ffcb;"></text>

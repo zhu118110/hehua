@@ -1,0 +1,43 @@
+<!--编辑地址-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="public">
+       <input type="text" name="recipients" value="{{ recipients }}" placeholder="请输入收件人"></input>
+    </view>
+
+    <view class="public">
+       <input type="text" name="phone" value="{{ phone }}" placeholder="联系电话"></input>
+    </view>
+
+    <picker mode="region" bindchange="chooseArea" name="area">
+		  <view class="infor_sex public">
+        <view class="sex_left">
+          选择所在地区
+        </view>
+        
+        <view class="sex_right">
+          {{area[0]}} {{area[1]}} {{area[2]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+		  </view>
+	  </picker>
+
+    <view class="public">
+       <input type="text" name="deatil_address" value="{{ deatil_address }}" placeholder="输入详细地址"></input>
+    </view>
+
+    <view class="public defaut" >
+      <view checked="{{ defaults }}">
+        设置为默认地址
+      </view>
+  
+      <switch color="#7fc8aa" bindchange="changeSwitch" name="defaults" />
+    </view>
+
+    <view class="sure">
+      <button formType="submit">
+        提交
+      </button>
+    </view>
+  </form>
+</view> 

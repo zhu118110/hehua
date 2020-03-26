@@ -1,0 +1,27 @@
+<!--我的积分-->
+<view class="container">
+  <view class="my_jf">
+    <view class="my_jf_show">
+      <view>我的积分</view>
+      <view>{{ jf_num }}</view>
+    </view>
+
+    <text class="iconfont icon-icon-test"></text>
+
+  </view>
+
+  <view class="jf">
+    <block wx:for="{{ get_jf }}">
+      <view class="get_jf">
+        <view class="get_way">
+          <text style="color:#7fc8aa" decode="true" class="iconfont icon-jifen"></text>
+          <text style="margin-left:15rpx;color:#7fc8aa">+{{ item.get_num }}</text>
+          <text style="margin-left:15rpx">{{ item.get_way }}奖励积分</text>
+        </view>
+        <view class="get_time">
+          {{item.get_time}}
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

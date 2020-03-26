@@ -1,0 +1,68 @@
+/* pages/local/edit_local/edit_page.wxss */
+.container{
+  background-color: #fff;
+  width: 100%;
+  font-size: 30rpx
+}
+.infor_sex{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  
+}
+.sex_left{
+  align-items: center;
+}
+.sex_right{
+	color: #666;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start
+}
+.sex_right text{
+	margin-left: 10rpx;
+}
+
+.public{
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #eee
+}
+.defaut{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.defaut switch{
+  transform: scale(0.9)
+}
+/* switch整体大小 */
+.wx-switch-input{
+  width:50px !important;
+  height:18px !important;
+ }  
+/* false样式 */
+.wx-switch-input::before{
+  width:48px !important;
+  height: 16px !important;
+}   
+/* true样式 */
+.wx-switch-input::after{
+  width:24px !important;
+  height:16px !important;
+}  
+
+
+
+.sure{
+  width: 100%;
+  margin-top: 100rpx
+}
+.sure button{
+  width: 50%;
+  margin:0 auto;
+  color: #fff;
+  font-size: 30rpx;
+  background-color: #7fc8aa;
+}

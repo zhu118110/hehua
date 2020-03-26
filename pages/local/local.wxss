@@ -27,22 +27,34 @@
   margin-top: 15rpx
 }
 .handle{
-  padding: 20rpx 30rpx;
+  
   display: flex;
   justify-content: space-between;
   align-items: center
 }
-.handle .radio{
-  transform:scale(0.9);
+.handle_default{
+  padding: 20rpx 30rpx;
+  display: flex;
+  align-items: center;
 }
-.handle .radio text{
-  font-size: 30rpx
+.handle_default .handle_default_none{
+  width: 28rpx;
+  height: 28rpx;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 .handle_delete{
   font-size: 30rpx;
-  color: rgb(126, 125, 125)
+  color: rgb(126, 125, 125);
+  padding-right:30rpx;
 }
 .handle_delete text{
   margin-left: 30rpx;
+  padding: 20rpx 0;
   font-size: 26rpx
 }
+.yuan{
+  margin-right: 20rpx
+}
+
+
