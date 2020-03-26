@@ -1,11 +1,11 @@
 {
   "pages": [
-    
+    "pages/local/local",
     "pages/index/index",
     "pages/luntan/luntan",
     "pages/zixun/zixun",
     "pages/my/my",
-    "pages/local/local",
+    
     "pages/my/my_infor/my_infor",
     "pages/my/my_jf/my_jf",
     "pages/my/my_care/my_care",

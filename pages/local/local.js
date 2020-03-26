@@ -9,12 +9,14 @@ Page({
     myLocal:[{
       name:"张三",
       phone:15555558888,
-      area:"山西省长治市xx县XX村",
+      area:["山西省","长治市","长子县"],
+      detail_local:"xx镇xx村",
       defaults: true,
     },{
         name: "李四",
         phone: 15555558888,
-        area: "江苏省昆山市",
+        area: ["江苏省", "昆山市", "xx县"],
+        detail_local: "xx镇xx村",
         defaults: false,
       }]
   },
@@ -31,12 +33,17 @@ Page({
   },
   // 点击编辑地址,跳转到编辑地址页面
   editLocal:function(e){
+    let index=e.currentTarget.dataset.index;
+    // 路由传参要把传递的值解析成json格式
+    let editData = JSON.stringify(this.data.myLocal[index]);
+    // console.log(editData);
     wx.navigateTo({
-      url: 'edit_local/edit_page',
+      url: 'edit_local/edit_page?editData='+editData,
       success() {
       }
     })
   },
+  // 删除地址
   deleteLocal(e){
     let index=e.currentTarget.dataset.index;
     let that=this;
@@ -61,7 +68,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      if(options.editData){
+        console.log("编辑好的数据"+options.editData)
+      }
   },
 
   /**

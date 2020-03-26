@@ -5,40 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-    recipients:"",  //收件人
-    phone:"",    //手机号
-    area:[],    //所在地区
-    deatil_address:"",    //详细地址
-    defaults:false    //设为默认
+    edit_data:[],
   },
   // 选择地区
   chooseArea(e){
-      
+    
       this.setData({
-        ['area']: this.data.area.concat(e.detail.value)
+        ['edit_data[0].area']: e.detail.value
       })
-   
+    console.log(this.data.edit_data[0].area)
   },
   // 设为默认
   changeSwitch(e){
     
       this.setData({
-        defaults:e.detail.value
+        ['edit_data[0].defaults']:e.detail.value
       })
   },
+  // 点击确认编辑返回到地址页面
   formSubmit(e){
     // e.detail.value是表单里的数据
+
+    let editData = JSON.stringify(this.data.edit_data);
     wx.navigateTo({
-      url: '../local',
+      url: '../local?editData=' + editData,
       success() {
       }
     })
   },
   /**
    * 生命周期函数--监听页面加载
+   * 
+   * 获取到要编辑的地址并渲染到页面上
    */
   onLoad: function (options) {
-
+    let edit_data = this.data.edit_data.concat(JSON.parse(options.editData));
+    this.setData({
+      ['edit_data']: edit_data,
+      ['edit_data[0].area']: edit_data[0].area
+    })
+    
   },
 
   /**

@@ -13,8 +13,11 @@
               {{item.phone}}
             </view>
           </view>
-          <view class="area_title_area">
-              {{item.area}}
+          <view class="area_title_area" >
+            <block wx:for="{{ item.area }}" wx:for-item="area">
+              {{area}}
+            </block>
+             {{item.detail_local}} 
           </view>
         </view>
       <!-- 删除编辑 -->
