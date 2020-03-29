@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    swipers: ["../../images/zixun_lb1.png", "../../images/zixun_lb1.png", "../../images/zixun_lb1.png", "../../images/zixun_lb1.png"],
+  swipers: ["../../images/zixun_lb1.png", "../../images/zixun_lb1.png", "../../images/zixun_lb1.png", "../../images/zixun_lb1.png"],
 	menpiao:[{
 		src:"../../images/zixun_mp1.png",
 		title:"国庆荷花博物馆门票9折优惠国庆荷花博物馆门票9折",

@@ -13,7 +13,7 @@ Page({
       this.setData({
         ['edit_data[0].area']: e.detail.value
       })
-    console.log(this.data.edit_data[0].area)
+  
   },
   // 设为默认
   changeSwitch(e){
@@ -22,11 +22,13 @@ Page({
         ['edit_data[0].defaults']:e.detail.value
       })
   },
+
   // 点击确认编辑返回到地址页面
   formSubmit(e){
     // e.detail.value是表单里的数据
 
-    let editData = JSON.stringify(this.data.edit_data);
+    let editData = JSON.stringify(e.detail.value);
+    // console.log(e.detail.value)
     wx.navigateTo({
       url: '../local?editData=' + editData,
       success() {
@@ -39,10 +41,12 @@ Page({
    * 获取到要编辑的地址并渲染到页面上
    */
   onLoad: function (options) {
-    let edit_data = this.data.edit_data.concat(JSON.parse(options.editData));
+    // 得到要编辑的数据,并渲染在页面上
+    this.data.edit_data = this.data.edit_data.concat(JSON.parse(options.editData));
+   
     this.setData({
-      ['edit_data']: edit_data,
-      ['edit_data[0].area']: edit_data[0].area
+      ['edit_data']: this.data.edit_data,
+      ['edit_data[0].area']: this.data.edit_data[0].area
     })
     
   },

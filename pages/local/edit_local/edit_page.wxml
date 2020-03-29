@@ -1,7 +1,7 @@
 <!--编辑地址-->
 <view class="container">
   <form bindsubmit="formSubmit">
-    <block wx:for="{{edit_data}}">
+    <block wx:for="{{edit_data}}" wx:key="index">
   
       <view class="public">
         <input type="text" name="name" value="{{ item.name }}" placeholder="请输入收件人"></input>
@@ -18,7 +18,7 @@
           </view>
           
           <view class="sex_right">
-          <block wx:for="{{item.area}}" wx:for-item="area">
+          <block wx:for="{{item.area}}" wx:key="index" wx:for-item="area">
             {{area}}
           </block>
             

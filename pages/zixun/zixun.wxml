@@ -11,24 +11,26 @@
 		</view>
 		
 		<block wx:for="{{menpiao}}" wx:for-index="index" wx:for-item="item">
-			<view class="menpiao" >
-				<view class="menpiao_left">
-					<image src="{{item.src}}" mode="aspectFit"></image>
-				</view>
-				<view class="menpiao_right">
-					<view class="right_title">
-						{{item.title}}
-					</view>
-					<view class="detail">
-						{{item.detail}}
-					</view>
-					<view class="img">
-						<image src="../../images/open.png"></image>
-						{{item.watch}}
-					</view>
-					
-				</view>
-			</view>
+      <navigator url="zx_detail/zx_detail" hover-class="none">
+        <view class="menpiao" >
+          <view class="menpiao_left">
+            <image src="{{item.src}}" mode="aspectFit"></image>
+          </view>
+          <view class="menpiao_right">
+            <view class="right_title">
+              {{item.title}}
+            </view>
+            <view class="detail">
+              {{item.detail}}
+            </view>
+            <view class="img">
+              <image src="../../images/open.png"></image>
+              {{item.watch}}
+            </view>
+            
+          </view>
+        </view>
+      </navigator>
 		</block>
 	</view>
 </view>

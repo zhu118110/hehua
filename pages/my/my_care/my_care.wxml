@@ -1,14 +1,14 @@
 <!--pages/my/my_care/my_care.wxml-->
 <view class="container">
 	<view class="header">
-		<block wx:for="{{careTitle}}"> 
+		<block wx:for="{{careTitle}}" wx:key="index"> 
 			<view bindtap="changeTitle" data-index="{{index}}" class="clickCol {{style==index?'active':''}}">
 				{{item}}
 			</view>
 		</block>
 	</view>
 	<view class="main">
-		<block wx:for="{{message}}"  wx:if="{{style==0}}">
+		<block wx:for="{{message}}" wx:key="index"  wx:if="{{style==0}}">
 			<view class="message">
 				<view class="message_img">
 					<image src="{{item.src}}">
@@ -27,7 +27,7 @@
 		</block>
 		
 		<!-- 帖子 -->
-		<block wx:for="{{post}}"  wx:if="{{style==1}}">
+		<block wx:for="{{post}}" wx:key="index"  wx:if="{{style==1}}">
 			<view class="post">
         <!-- 标题 -->
 				<view class="post_title" >{{item.title}}</view>

@@ -1,7 +1,7 @@
 <!--订单详情-->
 <view class="container">
 	<view class="header">
-		<block wx:for="{{careTitle}}"> 
+		<block wx:for="{{careTitle}}" wx:key="index"> 
 			<view bindtap="changeTitle" data-index="{{index}}" class="clickCol {{style==index?'active':''}}">
 				{{item}}
 			</view>
@@ -11,7 +11,7 @@
 	
 	<view class="main">
 		<!-- 已发货 -->
-		<block wx:for="{{ deliver }}"  wx:if="{{style==0}}">
+		<block wx:for="{{ deliver }}" wx:key="index"  wx:if="{{style==0}}">
 			<view class="deliver">
 				<view class="deliver_title">
 					<view>
@@ -51,7 +51,7 @@
 		</block>
 		
 		<!-- 已完成 -->
-		<block wx:for="{{ finish }}"  wx:if="{{style==1}}">
+		<block wx:for="{{ finish }}" wx:key="index"  wx:if="{{style==1}}">
 			<view class="deliver">
 				<view class="deliver_title">
 					<view>

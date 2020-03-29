@@ -20,37 +20,40 @@
 		</view>
 		
 		<view class="content">
-			<view class="comment" wx:for="{{ commend }}" wx:for-item="item">
-				<view class="comment_title">
-					<text>{{ item.title }}</text>
-				</view>
-				
-				<view class="comment_detail">
-					<view class="cmt_detail_left">
-						
-						<view class="dtl_left_tx">
-							<view><image src="{{item.tx}}"></image></view>
-							<view> {{ item.name }} </view>
-						</view>
-						
-						<view class="dtl_left_infor">
-							<view>
-								<text> {{ item.detail }} </text>
-							</view>
-							<view>
-								<text>点赞:{{ item.nice }} 评论:{{ item.pl }}</text>
-							</view>
-						</view>
-						
-					</view>
+      <block  wx:for="{{ commend }}" wx:key="index" wx:for-item="item">
+        <navigator url="lt_detail/lt_detail" hover-class="none">
+          <view class="comment">
+            <view class="comment_title">
+              <text>{{ item.title }}</text>
+            </view>
+            
+            <view class="comment_detail">
+                <view class="cmt_detail_left">
+                  
+                  <view class="dtl_left_tx">
+                    <view><image src="{{item.tx}}"></image></view>
+                    <view> {{ item.name }} </view>
+                  </view>
+                  
+                  <view class="dtl_left_infor">
+                    <view>
+                      <text> {{ item.detail }} </text>
+                    </view>
+                    <view>
+                      <text>点赞:{{ item.nice }} 评论:{{ item.pl }}</text>
+                    </view>
+                  </view>
+                  
+                </view>
 
-					<view class="cmt_detail_right">
-							<image src="../../images/luntan_2.jpg"></image>
-					</view>
-				</view>
-			</view>
-			
-		</view>
-
+                <view class="cmt_detail_right">
+                    <image src="../../images/luntan_2.jpg"></image>
+                </view>
+              </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+      
   </view>
 </view>

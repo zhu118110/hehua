@@ -1,7 +1,7 @@
 <!-- 地址管理 -->
 <view class="container">
   <view class="main">
-    <block wx:for="{{ myLocal }}">
+    <block wx:for="{{ myLocal }}" wx:key="index">
       <view class="area">
       <!-- 姓名电话 -->
         <view class="area_title">
@@ -14,7 +14,7 @@
             </view>
           </view>
           <view class="area_title_area" >
-            <block wx:for="{{ item.area }}" wx:for-item="area">
+            <block wx:for="{{ item.area }}" wx:key="index" wx:for-item="area">
               {{area}}
             </block>
              {{item.detail_local}} 

@@ -27,7 +27,7 @@
 			<navigator url="jf_shop/jf_shop" hover-class="none">
 			  <view class="my_jf">
 				<view class="my_jf_img">
-				  <text class="iconfont icon-duihuan"></text>
+				  <text class="iconfont icon-duihuan1"></text>
 				</view>
 				<view>
 				  <text>兑换商城</text>
