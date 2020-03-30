@@ -30,11 +30,23 @@
   display: flex;
   align-items: center;
 }
-.head_time view text{
+/* .head_time view text{
   margin-left: 30rpx
+} */
+.head_time view button{
+  color: #b4b4b4;
+  background-color: #fff;
+  margin: 0;
+  padding: 0 10rpx;
+}
+.head_time view button.iconfont{
+  font-size: 30rpx
+}
+.head_time view button::after{
+  border: none;
 }
 .icon-tianchongxing-{
-  color: #7fc8aa
+  color: #7fc8aa !important;
 }
 
 
@@ -77,6 +89,9 @@
 .comment_list_tx{
   flex: 1;
   
+}
+.icon-dianzan-sx{
+  color: #7fc8aa
 }
 .comment_list_tx image{
   width: 80rpx;

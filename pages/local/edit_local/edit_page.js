@@ -28,8 +28,7 @@ Page({
     // e.detail.value是表单里的数据
 
     let editData = JSON.stringify(e.detail.value);
-    // console.log(e.detail.value)
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../local?editData=' + editData,
       success() {
       }
@@ -62,14 +61,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
   },
 
   /**

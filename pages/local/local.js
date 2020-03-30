@@ -16,7 +16,7 @@ Page({
     },{
         name: "李四",
         phone: 15555558888,
-        area: ["江苏省", "昆山市", "xx县"],
+        area: ["天津市", "天津市", "和平区"],
         detail_local: "xx镇xx村",
         defaults: false,
       }]
@@ -72,7 +72,8 @@ Page({
           that.data.myLocal.splice(index, 1);
           let arr = that.data.myLocal;
           that.setData({
-            ['myLocal']: arr
+            ['myLocal']: arr,
+            showIndex:0
           })
         }
         
@@ -117,21 +118,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("页面显示")
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    console.log("页面隐藏")
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    
   },
 
   /**

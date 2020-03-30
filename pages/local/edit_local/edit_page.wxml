@@ -11,7 +11,7 @@
         <input type="text" name="phone" value="{{ item.phone }}" placeholder="联系电话"></input>
       </view>
 
-      <picker mode="region" bindchange="chooseArea" name="area">
+      <picker mode="region" bindchange="chooseArea" name="area" value="{{item.area}}">
         <view class="infor_sex public">
           <view class="sex_left">
             选择所在地区

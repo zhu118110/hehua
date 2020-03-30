@@ -11,8 +11,9 @@
        <text>来源:荷花博物馆</text>
        <view>
         <!-- {{scStyle?'icon-tianchongxing-':'icon-xingxing'}} -->
-        <text class="iconfont {{scStyle?'icon-tianchongxing-':'icon-xingxing'}}" bindtap="dianzan" ></text>
-        <text class="iconfont icon-fenxiang"></text>
+        <button size="mini" class="iconfont {{scStyle?'icon-tianchongxing-':'icon-xingxing'}}" bindtap="scStyle"></button>
+        <!-- <text class="iconfont {{scStyle?'icon-tianchongxing-':'icon-xingxing'}}" bindtap="scStyle" ></text> -->
+        <button size="mini" open-type="share" class="iconfont icon-fenxiang"></button>
        </view>
        
       </view>
@@ -36,89 +37,48 @@
     <view class="comment">
       <rich-text nodes="{{nodes}}"></rich-text>
       <!-- 评论区域 -->
-      <view class="comment_list">
-          <!-- 头像 -->
-        <view class="comment_list_tx">
-          <image src="../../../images/nologin.jpg"></image>
-        </view>
+      <block wx:for="{{comment}}" wx:key="index">
+       <view class="comment_list">
+            <!-- 头像 -->
+          <view class="comment_list_tx">
+            <image src="{{item.userImg}}"></image>
+          </view>
 
-        <view class="comment_list_infor">
-         
-          <view class="comment_list_infor_head">
-              <!-- 用户姓名和发表时间 -->
-              <view class="comment_name_time">
-                <view class="comment_name">
-                  用户一
+          <view class="comment_list_infor">
+          
+            <view class="comment_list_infor_head">
+                <!-- 用户姓名和发表时间 -->
+                <view class="comment_name_time">
+                  <view class="comment_name">
+                    {{item.userName}}
+                  </view>
+                  <view class="comment_time">
+                      {{item.commentTime}}
+                  </view>
                 </view>
-                <view class="comment_time">
-                    3分钟前
-                </view>
+                <!-- 点赞数 -->
+                <view class="comment_dianzan" bindtap="dzStyle" data-dzIndex="{{index}}">
+                  <text class="iconfont {{dzStyle?'icon-dianzan-sx':'icon-dianzan1'}}"
+                  >
+                  </text>
+                  <text>{{item.niceNumber}}</text>
+                </view> 
+            </view>
+            <!-- 评论的内容 -->
+            <view class="comment_msg">
+               {{item.commentMsg}}
+            </view>
+
+            <view class="comment_reply">
+              <view>
+                <text class="reply_name">作者</text>回复<text class="reply_name">@小西西</text>:谢谢
               </view>
-              <!-- 点赞数 -->
-              <view class="comment_dianzan">
-                <text class="iconfont icon-dianzan1"></text>
-                <text>199</text>
-              </view> 
-          </view>
-          <!-- 评论的内容 -->
-          <view class="comment_msg">
-              我们主任总爱给我们讲这样一段故事:她刚进入博物馆工作的时候，老馆长问她有没有去过上博，
-              她说没有,老馆长用异常惊讶感叹的语气说“上博你都没去过!找
-              机会去”，于是我们主任周五晚上坐火车到上海，参观完了又坐周日晚上的火车回北京。
+            </view>
+
           </view>
 
-          <view class="comment_reply">
-             <view>
-               <text class="reply_name">作者</text>回复<text class="reply_name">@小西西</text>:谢谢
-             </view>
-          </view>
-
-        </view>
-
-      </view>
-
-      <!-- 评论区域 -->
-      <view class="comment_list">
-          <!-- 头像 -->
-        <view class="comment_list_tx">
-          <image src="../../../images/nologin.jpg"></image>
-        </view>
-
-        <view class="comment_list_infor">
-         
-          <view class="comment_list_infor_head">
-              <!-- 用户姓名和发表时间 -->
-              <view class="comment_name_time">
-                <view class="comment_name">
-                  用户一
-                </view>
-                <view class="comment_time">
-                    3分钟前
-                </view>
-              </view>
-              <!-- 点赞数 -->
-              <view class="comment_dianzan">
-                <text class="iconfont icon-dianzan1"></text>
-                <text>199</text>
-              </view> 
-          </view>
-          <!-- 评论的内容 -->
-          <view class="comment_msg">
-              我们主任总爱给我们讲这样一段故事:她刚进入博物馆工作的时候，老馆长问她有没有去过上博，
-              她说没有,老馆长用异常惊讶感叹的语气说“上博你都没去过!找
-              机会去”，于是我们主任周五晚上坐火车到上海，参观完了又坐周日晚上的火车回北京。
-          </view>
-
-          <view class="comment_reply">
-             <view>
-               <text class="reply_name">作者</text>回复<text class="reply_name">@小西西</text>:谢谢
-             </view>
-          </view>
-
-        </view>
-
-      </view>
-
+        </view><!-- comment_list -->
+        </block>
     </view>  <!-- content -->
 
 

@@ -13,7 +13,7 @@
    
   <!-- 个人信息 -->
     <view class="infor">
-		
+		<block wx:for="{{choice}}" wx:key="index">
       <view class="infor_sex" catchtap="showSex">
         <view class="sex_left">
           <image src="../../../images/sex.png"></image>
@@ -21,50 +21,50 @@
         </view>
 
         <view class="sex_right">
-            {{sexValue}}
+            {{item.sexValue}}
           <text class="iconfont icon-you"></text>
         </view>
       </view>
-	  
-	  <picker mode="date" bindchange="birthDayChange" value="{{birthday}}">
-		  <view class="infor_sex">
-			<view class="sex_left">
-			  <image src="../../../images/happyDay.png"></image>
-			  生日
-			</view>
-		  
-			<view class="sex_right">
-				{{birthday}}
-			  <text class="iconfont icon-you"></text>
-			</view>
-		  </view>
-	  </picker>
-	  
-	  <picker mode="region" bindchange="addressChange" value="{{address}}">
-		  <view class="infor_sex">
-			<view class="sex_left">
-			  <image src="../../../images/address.png"></image>
-			  地址
-			</view>
-		  
-			<view class="sex_right">
-				{{address[0]}} {{address[1]}} {{address[2]}}
-			  <text class="iconfont icon-you"></text>
-			</view>
-		  </view>
-	  </picker>
-	  
-	  <view class="infor_sex" catchtap="showJobArea">
-	    <view class="sex_left">
-	      <image src="../../../images/job.png"></image>
-	      职业
-	    </view>
-	    <view class="sex_right">
-	        {{jobValue}}
-	      <text class="iconfont icon-you"></text>
-	    </view>
-	  </view>
-
+      
+      <picker mode="date" bindchange="birthDayChange" value="{{birthday}}">
+        <view class="infor_sex">
+        <view class="sex_left">
+          <image src="../../../images/happyDay.png"></image>
+          生日
+        </view>
+        
+        <view class="sex_right">
+          {{item.birthday}}
+          <text class="iconfont icon-you"></text>
+        </view>
+        </view>
+      </picker>
+      
+      <picker mode="region" bindchange="addressChange" value="{{item.address}}">
+        <view class="infor_sex">
+        <view class="sex_left">
+          <image src="../../../images/address.png"></image>
+          地址
+        </view>
+        
+        <view class="sex_right">
+          {{item.address[0]}} {{item.address[1]}} {{item.address[2]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+        </view>
+      </picker>
+      
+      <view class="infor_sex" catchtap="showJobArea">
+        <view class="sex_left">
+          <image src="../../../images/job.png"></image>
+          职业
+        </view>
+        <view class="sex_right">
+            {{item.jobValue}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </view>
+    </block>
 
     </view>
 

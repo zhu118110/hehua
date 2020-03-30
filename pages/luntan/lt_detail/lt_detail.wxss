@@ -19,9 +19,20 @@
   font-size: 34rpx;
   font-weight: 600;
 }
-.head_name text{
-  color: #7fc8aa;
-  margin-left: 15rpx
+.head_time button{
+  color: #b4b4b4;
+  background-color: #fff;
+  margin: 0;
+  padding: 0 10rpx;
+}
+.head_time button.iconfont{
+  font-size: 30rpx
+}
+.head_time button::after{
+  border: none;
+}
+.icon-tianchongxing-{
+  color: #7fc8aa !important;
 }
 .head_name,.head_time{
   margin-bottom: 10rpx;
@@ -93,7 +104,9 @@
   color:#d8d8d8;
   font-size: 26rpx;
 }
-
+.icon-dianzan-sx{
+  color: #7fc8aa
+}
 .comment_msg{
   margin: 20rpx 0;
   overflow: hidden;
@@ -140,4 +153,6 @@
 .say .input-placeholder {
   font-size: 26rpx;
 }
+
+
 
