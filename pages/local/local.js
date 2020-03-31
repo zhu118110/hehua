@@ -85,26 +85,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      // 如果有编辑地址的数据
-      if(options.editData){
-      
-        let editData=[];
-        let edit_index = app.globalData.edit_index;   //编辑的地址的下标
-        editData =JSON.parse(options.editData);    //编辑后的地址的数据
-        this.setData({
-          ['myLocal[' + edit_index + ']']: editData,
-
-        })
-        //改变默认地址
-        if (this.data.myLocal[edit_index].defaults==true){
-          this.setData({
-            showIndex:edit_index,   
-          })
-        }else{
-          showIndex: 0
-        }
-        
-      }
+    
   },
 
   /**
@@ -118,14 +99,35 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("页面显示")
+    
+    let pages = getCurrentPages();
+    let currPage = pages[pages.length - 1];
+    if (currPage.data.params){
+      // 将携带的参数赋值
+      let editData = [];
+      let edit_index = app.globalData.edit_index;   //编辑的地址的下标
+      editData = JSON.parse(currPage.data.params);    //编辑后的地址的数据
+      this.setData({
+        ['myLocal[' + edit_index + ']']: editData,
+
+      })
+      //改变默认地址
+      if (this.data.myLocal[edit_index].defaults==true){
+        this.setData({
+          showIndex:edit_index,   
+        })
+      }else{
+        showIndex: 0
+      }
+    }
+    
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    console.log("页面隐藏")
+    
   },
 
   /**

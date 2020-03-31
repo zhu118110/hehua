@@ -1,0 +1,70 @@
+<!--兑换详情-->
+<view class="container">
+  <view class="main">
+
+    <view class="head">
+    <!-- 轮播 -->
+      <swiper indicator-dots='true' indicator-color='#bfe3d4' indicator-active-color='#7fc8aa' autoplay='true'>
+        <block wx:for="{{swipers}}" wx:for-item="item" wx:for-index="index">
+          <swiper-item style='text-align:center'>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>   
+      </swiper>
+    <!-- 商品信息 -->
+      <view class="head_infor">
+        <view class="head_title">
+          安徽宣城狼毫毛笔
+        </view>
+        <view class="head_detail">
+          这是一只有千年历史的笔
+        </view>
+        <view class="head_jf">
+          <text class="iconfont icon-jifen"></text>
+          <text>800</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="num">
+      <view>
+        数量
+      </view>
+      <view class="btn">
+        <button size="mini" bindtap="add">+</button>
+        <view>{{num}}</view>
+        <!-- <input value="{{num}}"></input> -->
+        <button size="mini" disabled="{{disable}}" bindtap="reduce">-</button>
+      </view>
+    </view>
+    
+    <navigator url="../../../local/local" hover-class="none">
+      <view class="local">
+        <view class="local_title">
+          <view>
+            收货地址
+          </view>
+          <text class="iconfont icon-you">
+          </text>
+        </view>
+
+        <view class="local_infor">
+          <view class="name">
+            张三 <text>12345678910</text>
+          </view>
+          <view class="local_detail">
+            山西省长治市长子县 xx镇xx村
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+    <view class="sd">
+        
+    </view>
+
+    <view class="now_dh">
+       立即兑换
+    </view>
+  </view>  <!-- main -->
+</view><!-- container -->

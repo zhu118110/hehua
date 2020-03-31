@@ -32,12 +32,14 @@ Page({
 
   onLoad(e){
 	//  页面刚加载时获取到本地存储的个人信息
-
+    
     let storage = wx.getStorageSync("choiseInfo");
-   
-    this.setData({
-      ['choice']: storage
-    })
+    if (storage){
+      this.setData({
+        ['choice']: storage
+      })
+    }
+    
   },
   
   // 点击选择性别区域显示

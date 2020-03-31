@@ -28,10 +28,15 @@ Page({
     // e.detail.value是表单里的数据
 
     let editData = JSON.stringify(e.detail.value);
-    wx.redirectTo({
-      url: '../local?editData=' + editData,
-      success() {
-      }
+   
+    let page=getCurrentPages();
+    let prePage=page[page.length-2];   //前一个页面
+    prePage.setData({
+      // 要往前一个页面传递的数据
+      params: editData
+    });
+    wx.navigateBack({
+      delta: 1
     })
   },
   /**

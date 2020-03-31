@@ -1,0 +1,108 @@
+/* pages/my/my_jf/dh_detail/dh_detail.wxss */
+.container{
+  width: 100%;
+  font-size: 30rpx;
+}
+.head,.head_infor,.num,.local{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+   margin-bottom: 20rpx;
+}
+.head image{
+  width: 100%
+}
+.head_infor{
+  padding: 20rpx 30rpx;
+}
+.head_title{
+  font-weight: 600;
+}
+.head_detail{
+  font-size: 26rpx;
+  color: #b9b9b9;
+  margin-top: 20rpx;
+}
+.head_jf{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.head_jf text{
+  color: #7fc8aa;
+  padding: 0 10rpx;
+}
+
+
+
+.num{
+  /* background-color: red; */
+ 
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.num .btn{
+  display: flex;
+  align-items: baseline;
+}
+.num button{
+  padding:  5rpx 20rpx;
+  color: #fff;
+  background-color: #7fc8aa;
+  line-height: normal;
+  border-radius: 8rpx;
+  border: none;
+  font-size: 26rpx;
+}
+.num button::after{
+  width: auto;
+  height: auto;
+}
+.num button[disabled]:not([type]){
+  background-color: #bfe3d4 !important;
+}
+.num .btn view{
+  width: 50rpx;
+  text-align: center
+}
+
+.local{
+  
+  padding: 20rpx 30rpx;
+ 
+}
+.local_title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.local_title view{
+  font-weight: 600;
+}
+.local_infor .name{
+  padding: 20rpx 0;
+}
+.local_infor .name text{
+  font-size: 24rpx
+}
+
+.sd{
+  background-color: #fff;
+  height: 1rpx
+}
+
+.now_dh{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #7fc8aa;
+  padding: 30rpx 0;
+  color: #fff;
+  font-weight: 600;
+  position: fixed;
+  bottom: 0;
+}

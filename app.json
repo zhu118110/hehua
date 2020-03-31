@@ -13,8 +13,8 @@
     "pages/my/my_jf/my_jf",
     "pages/my/my_care/my_care",
     "pages/my/jf_shop/jf_shop",
+    "pages/my/jf_shop/dh_detail/dh_detail",
     "pages/my/orderForm/orderForm"
-    
     
   ],
   "window": {

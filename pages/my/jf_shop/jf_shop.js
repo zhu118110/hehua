@@ -39,7 +39,11 @@ Page({
           }]
         }]
   },
-
+  dh:function(e){
+    wx.navigateTo({
+      url: 'dh_detail/dh_detail',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

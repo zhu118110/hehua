@@ -24,9 +24,10 @@
   background-color: #fff;
   margin: 0;
   padding: 0 10rpx;
+  line-height: normal
 }
 .head_time button.iconfont{
-  font-size: 30rpx
+  font-size: 34rpx
 }
 .head_time button::after{
   border: none;

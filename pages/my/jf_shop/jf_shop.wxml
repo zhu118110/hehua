@@ -26,12 +26,10 @@
                 <image src="../../../images/dh.png"></image>
                 <text> {{ shopItem.jf_price }} </text>
               </view> 
-              <view class="type_one_dh_btn">
+              <view class="type_one_dh_btn" bindtap="dh">
                 <button hover-class="none">兑换</button>
               </view>
             </view>
-
-
           </view>
         </block>
       </view>
