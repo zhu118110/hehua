@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+   
     "pages/index/index",
     "pages/luntan/luntan",
     "pages/luntan/lt_detail/lt_detail",

@@ -46,7 +46,8 @@
 
 
 .activity{
-	padding: 0 35rpx 0 41rpx;
+	width: 90%;
+  margin: 0 auto;
 	
 }
 .activity_main{

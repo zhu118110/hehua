@@ -10,7 +10,7 @@ Page({
     myLocal:[{
       name:"张三",
       phone:15555558888,
-      area:["山西省","长治市","长子县"],
+      area:["北京市","北京市","东城区"],
       detail_local:"xx镇xx村",
       defaults: false,
     },{
@@ -55,6 +55,7 @@ Page({
     wx.navigateTo({
       url: 'edit_local/edit_page?editData='+editData,
       success() {
+        
       }
     })
     
